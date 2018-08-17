@@ -12,7 +12,8 @@ class App extends Component {
   } 
 
   switchNameHandler = () => {
-
+    //Don't do this -> this.state.persons[0].name="Maximilian";
+    this.setState({persons: })
   }
 
   render() {
