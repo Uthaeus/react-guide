@@ -13,7 +13,13 @@ class App extends Component {
 
   switchNameHandler = () => {
     //Don't do this -> this.state.persons[0].name="Maximilian";
-    this.setState({persons: })
+    this.setState({
+      persons: [
+        { name: 'Maximilan', age: 28 }, 
+        { name: 'Manu', age: 29 },
+        { name: 'Stephanie', age: 27 }
+      ]
+    })
   }
 
   render() {
