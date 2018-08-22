@@ -26,6 +26,18 @@ class App extends Component {
     console.log('[App.js] Inside componentDidMount')
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('[UPDATE App.js] Inside shouldComponentUpdate');
+  } 
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log('[UPDATE App.js] Inside componentWillUpdate')
+  }
+
+  componentDidUpdate() {
+    console.log('[UPDATE App.js] Inside componentDidUpdate')
+  }
+
    
 
   deletePersonHandler = (personIndex) => {
